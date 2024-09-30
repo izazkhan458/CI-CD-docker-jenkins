@@ -13,7 +13,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone the Git repository containing Dockerfile and index.html
-                git 'https://github.com/izazkhan458/CI-CD-docker-jenkins.git/tree/master'  
+                git 'https://github.com/izazkhan458/CI-CD-docker-jenkins.git', branch: 'master'  
             }
         }
 
